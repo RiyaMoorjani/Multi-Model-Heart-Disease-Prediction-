@@ -55,7 +55,7 @@ multimodal_heart_disease/
 
 ---
 
-## 🛠️ Quick Start Guide
+##  Quick Start Guide
 
 ### 1. Setup Environment Key
 Create a `.env` file in the root folder of the project to store your Groq API key:
