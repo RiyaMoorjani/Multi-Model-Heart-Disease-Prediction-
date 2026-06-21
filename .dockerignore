@@ -1,0 +1,23 @@
+# Exclude the virtual environment (since packages are installed fresh inside Docker)
+.venv/
+venv/
+env/
+
+# Exclude python cache files
+**/__pycache__/
+**/*.pyc
+**/*.pyo
+**/*.pyd
+
+# Exclude git metadata
+.git/
+.gitignore
+
+# Exclude local Docker logs and ignore files
+.dockerignore
+Dockerfile
+docker-compose.yml
+
+# Exclude local testing assets generated during verification
+assets/synthetic_ecg.png
+assets/processed_ecg.png

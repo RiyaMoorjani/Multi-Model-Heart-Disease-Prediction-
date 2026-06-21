@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  heart-disease-system:
+    build: .
+    container_name: heart_disease_diagnostic_system
+    ports:
+      - "8000:8000"
+    environment:
+      - GROQ_API_KEY=${GROQ_API_KEY:-}
+      - GROQ_MODEL_NAME=llama-3.1-8b-instant
+    volumes:
+      - ./assets:/workspace/assets
+    restart: unless-stopped
